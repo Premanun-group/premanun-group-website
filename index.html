@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PREMANUN GROUP</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,"Noto Sans Thai",sans-serif;
+  background:#f4f4f2;
+  color:#151515;
+}
+
+header{
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:10;
+  padding:28px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:14px;
+}
+
+.hero{
+  min-height:100vh;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.35)),
+    linear-gradient(135deg,#151515,#3b3b3b);
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:9% 7%;
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.hero-small{
+  font-size:13px;
+  letter-spacing:5px;
+  color:#bbb;
+}
+
+.hero h1{
+  font-size:clamp(55px,9vw,120px);
+  line-height:.9;
+  margin:30px 0;
+  letter-spacing:-4px;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:20px;
+  line-height:1.8;
+  color:#ccc;
+}
+
+.hero-button{
+  display:inline-block;
+  margin-top:35px;
+  padding:16px 28px;
+  background:white;
+  color:#111;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{
+  padding:100px 7%;
+}
+
+.label{
+  font-size:12px;
+  letter-spacing:4px;
+  color:#777;
+  margin-bottom:20px;
+}
+
+h2{
+  font-size:clamp(36px,5vw,65px);
+  margin-bottom:35px;
+}
+
+.about{
+  background:#e8e8e4;
+}
+
+.about-text{
+  max-width:950px;
+  font-size:23px;
+  line-height:1.8;
+}
+
+.business-intro{
+  max-width:650px;
+  color:#666;
+  line-height:1.8;
+  margin-bottom:50px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  min-height:330px;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.3s;
+  border:1px solid #e7e7e7;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+.number{
+  color:#aaa;
+  font-size:13px;
+}
+
+.card h3{
+  font-size:27px;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#666;
+  line-height:1.6;
+}
+
+.card:last-child{
+  grid-column:1 / -1;
+}
+
+.vision{
+  background:#1a1a1a;
+  color:white;
+}
+
+.vision p{
+  max-width:850px;
+  font-size:24px;
+  line-height:1.8;
+  color:#bbb;
+}
+
+.contact{
+  background:#fff;
+}
+
+.contact h2{
+  max-width:900px;
+}
+
+.contact p{
+  font-size:18px;
+  line-height:1.8;
+  color:#666;
+}
+
+footer{
+  padding:30px 7%;
+  background:#0a0a0a;
+  color:#777;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+}
+
+@media(max-width:750px){
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:85vh;
+  }
+
+  .hero h1{
+    letter-spacing:-2px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .card:last-child{
+    grid-column:auto;
+  }
+
+  section{
+    padding:75px 7%;
+  }
+
+  footer{
+    display:block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PREMANUN GROUP</div>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#business">BUSINESSES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-small">
+      PREMANUN GROUP
+    </div>
+
+    <h1>
+      WE BUILD.<br>
+      WE DESIGN.<br>
+      WE GROW.
+    </h1>
+
+    <p>
+      กลุ่มธุรกิจด้านการก่อสร้าง การออกแบบ
+      ที่อยู่อาศัย และวัสดุสำหรับบ้าน
+      ที่พัฒนาแต่ละแบรนด์ด้วยแนวคิด
+      คุณภาพ และการใช้งานจริง
+    </p>
+
+    <a class="hero-button" href="#business">
+      EXPLORE OUR BUSINESSES
+    </a>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="about">
+
+  <div class="label">ABOUT US</div>
+
+  <h2>PREMANUN GROUP</h2>
+
+  <div class="about-text">
+
+    PREMANUN GROUP คือกลุ่มธุรกิจที่ดำเนินงาน
+    ตั้งแต่การออกแบบ การก่อสร้าง การตกแต่งภายใน
+    บ้านน็อคดาวน์ วัสดุก่อสร้าง
+    ไปจนถึงผลิตภัณฑ์และองค์ประกอบสำหรับที่อยู่อาศัย
+
+    <br><br>
+
+    เราพัฒนาแต่ละแบรนด์ให้มีความเชี่ยวชาญในสายงานของตัวเอง
+    พร้อมเชื่อมโยงบริการต่าง ๆ เพื่อรองรับความต้องการ
+    ด้านบ้านและอาคารอย่างครบวงจร
+
+  </div>
+
+</section>
+
+
+<section id="business">
+
+  <div class="label">OUR BUSINESSES</div>
+
+  <h2>5 Brands.<br>One Group.</h2>
+
+  <p class="business-intro">
+    กลุ่มธุรกิจภายใต้ PREMANUN GROUP
+    ครอบคลุมตั้งแต่งานก่อสร้างและออกแบบ
+    ไปจนถึงวัสดุและผลิตภัณฑ์สำหรับบ้าน
+  </p>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+
+      <div class="number">01 / CONSTRUCTION</div>
+
+      <div>
+        <h3>THAKORN LIVING CONSTRUCTION</h3>
+
+        <p>
+          รับสร้างบ้าน • งานก่อสร้าง
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">02 / INTERIOR</div>
+
+      <div>
+        <h3>AKIRA HOUSES</h3>
+
+        <p>
+          Interior Design • Built-in
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">03 / MODULAR LIVING</div>
+
+      <div>
+        <h3>KNOCKDOWN SIGNATURE</h3>
+
+        <p>
+          บ้านน็อคดาวน์ • Modular Living
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">04 / MATERIALS</div>
+
+      <div>
+        <h3>รักษ์โฮม</h3>
+
+        <p>
+          วัสดุก่อสร้าง • Home & Building Materials
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="number">05 / HOME & TRADITION</div>
+
+      <div>
+        <h3>PHUMPHET</h3>
+
+        <p>
+          ศาลพระภูมิ • ศาลเจ้าที่
+        </p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section class="vision">
+
+  <div class="label">OUR DIRECTION</div>
+
+  <h2>Building More<br>Than Buildings.</h2>
+
+  <p>
+    จากงานก่อสร้างสู่การออกแบบภายใน
+    จากวัสดุก่อสร้างสู่ผลิตภัณฑ์สำหรับบ้าน
+    PREMANUN GROUP มุ่งพัฒนาธุรกิจที่เชื่อมโยงกัน
+    เพื่อสร้างระบบบริการด้านบ้านและอาคารที่ครบยิ่งขึ้น
+  </p>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+  <div class="label">CONTACT</div>
+
+  <h2>Let's Build<br>Something Together.</h2>
+
+  <p>
+    PREMANUN GROUP<br>
+    Chiang Mai, Thailand
+  </p>
+
+</section>
+
+
+<footer>
+
+  <div>
+    PREMANUN GROUP
+  </div>
+
+  <div>
+    © 2026 PREMANUN GROUP
+  </div>
+
+</footer>
+
+</body>
+</html>
